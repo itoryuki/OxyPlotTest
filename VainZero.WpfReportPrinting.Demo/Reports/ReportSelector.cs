@@ -8,10 +8,12 @@ namespace VainZero.WpfReportPrinting.Demo.Reports
 {
     public sealed class ReportSelector
     {
+       
         public IReadOnlyList<IReport> Reports { get; } =
             new IReport[]
             {
                 new HelloWorldReport(),
+               
                 new OrderForm(),
             };
 

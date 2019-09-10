@@ -3,6 +3,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:headeredGrid="clr-namespace:VainZero.Windows.Controls;assembly=VainZero.WpfReportPrinting.Core"
     xmlns:local="clr-namespace:VainZero.WpfReportPrinting.Demo.Reports"
+    xmlns:oxy="http://oxyplot.org/wpf"
+            xmlns:prism="http://prismlibrary.com/"
+
     >
     <DataTemplate DataType="{x:Type local:ReportSelector}">
         <ListBox ItemsSource="{Binding Reports}" SelectedItem="{Binding SelectedReport.Value}">
@@ -13,22 +16,781 @@
             </ListBox.ItemTemplate>
         </ListBox>
     </DataTemplate>
-    
-    <!-- サンプルとなるレポートの一覧 -->
-    
-    <!-- ハローワールド -->
-    
+
+    <!--  サンプルとなるレポートの一覧  -->
+
+    <!--  指導書  -->
+
     <DataTemplate DataType="{x:Type local:HelloWorldPageViewModel}">
         <Grid Margin="30">
-            <StackPanel>
-                <TextBlock HorizontalAlignment="Center" FontSize="30" Text="ハローワールド" />
-                <TextBlock HorizontalAlignment="Right" Text="2007/08/31" />
-                <TextBlock Text="Hello, world!" />
-            </StackPanel>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="60" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="20" />
+
+            </Grid.RowDefinitions>
+            <Rectangle
+                Grid.Row="7"
+                Grid.RowSpan="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="2" />
+            <Rectangle
+                Grid.Row="13"
+                Grid.RowSpan="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="2" />
+            <Rectangle
+                Grid.Row="2"
+                Grid.RowSpan="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="12"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="2" />
+            <TextBlock
+                Name="TopMsg"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="10"
+                FontWeight="Bold"
+                Text="指導書" />
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="8"
+                Grid.ColumnSpan="4"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                FontSize="5"
+                Text="[確認書番号]3456789012345678901234567890" />
+            <Rectangle
+                Grid.Row="2"
+                Grid.Column="0"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="2"
+                Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="乗務員" />
+            <Rectangle
+                Grid.Row="2"
+                Grid.Column="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="2"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="[乗務員名称]" />
+            <Rectangle
+                Grid.Row="2"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="2"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="運行日付" />
+            <Rectangle
+                Grid.Row="2"
+                Grid.Column="4"
+                Grid.ColumnSpan="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="2"
+                Grid.Column="4"
+                Grid.ColumnSpan="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="4"
+                Text="2019/07/01 10:10:30" />
+            <Rectangle
+                Grid.Row="2"
+                Grid.Column="5"
+                Grid.ColumnSpan="3"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+
+            <TextBlock
+                Grid.Row="2"
+                Grid.Column="5"
+                Grid.ColumnSpan="3"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="東京都港区港南１－８－１５" />
+            <Rectangle
+                Grid.Row="2"
+                Grid.Column="8"
+                Grid.ColumnSpan="2"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="2"
+                Grid.Column="8"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="4"
+                Text="2019/07/01 10:10:30" />
+            <Rectangle
+                Grid.Row="2"
+                Grid.Column="10"
+                Grid.ColumnSpan="2"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="2"
+                Grid.Column="10"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="東京都港区港南１－８－１５" />
+            <Rectangle
+                Grid.Row="3"
+                Grid.Column="0"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="3"
+                Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="課所" />
+            <Rectangle
+                Grid.Row="3"
+                Grid.Column="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="3"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="[課所名]" />
+            <Rectangle
+                Grid.Row="3"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="3"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="車両" />
+            <Rectangle
+                Grid.Row="3"
+                Grid.Column="4"
+                Grid.ColumnSpan="4"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="3"
+                Grid.Column="4"
+                Grid.ColumnSpan="4"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="[車番]あああ９９９　い９９－９９" />
+            <Rectangle
+                Grid.Row="3"
+                Grid.Column="8"
+                Grid.ColumnSpan="4"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="3"
+                Grid.Column="8"
+                Grid.ColumnSpan="4"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="[課所管理番号]" />
+            <Rectangle
+                Grid.Row="4"
+                Grid.Column="0"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="4"
+                Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="運行時間" />
+            <Rectangle
+                Grid.Row="4"
+                Grid.Column="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="4"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="10:10:30" />
+            <Rectangle
+                Grid.Row="4"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="4"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="運転時間" />
+            <Rectangle
+                Grid.Row="4"
+                Grid.Column="4"
+                Grid.ColumnSpan="2"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="4"
+                Grid.Column="4"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="10:10:30" />
+            <Rectangle
+                Grid.Row="4"
+                Grid.Column="6"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="4"
+                Grid.Column="6"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="非運転時間" />
+            <Rectangle
+                Grid.Row="4"
+                Grid.Column="7"
+                Grid.ColumnSpan="2"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="4"
+                Grid.Column="7"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="10:10:30" />
+            <Rectangle
+                Grid.Row="4"
+                Grid.Column="9"
+                Grid.ColumnSpan="2"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="4"
+                Grid.Column="9"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="連続走行時間" />
+            <Rectangle
+                Grid.Row="4"
+                Grid.Column="11"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="4"
+                Grid.Column="11"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="10:10:30" />
+            <Rectangle
+                Grid.Row="5"
+                Grid.Column="0"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="5"
+                Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="累積走行距離" />
+            <Rectangle
+                Grid.Row="5"
+                Grid.Column="1"
+                Grid.ColumnSpan="5"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="5"
+                Grid.Column="1"
+                Grid.ColumnSpan="5"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="9,999,999km～9,999,999km" />
+            <Rectangle
+                Grid.Row="5"
+                Grid.Column="6"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="5"
+                Grid.Column="6"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="走行距離" />
+            <Rectangle
+                Grid.Row="5"
+                Grid.Column="7"
+                Grid.ColumnSpan="5"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="5"
+                Grid.Column="7"
+                Grid.ColumnSpan="5"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="9,999,999km" />
+            <!--  明細  -->
+            <Rectangle
+                Grid.Row="7"
+                Grid.Column="0"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="7"
+                Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="発生日" />
+
+            <Rectangle
+                Grid.Row="7"
+                Grid.Column="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="7"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="2099/01/01" />
+            <Rectangle
+                Grid.Row="8"
+                Grid.Column="0"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="8"
+                Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="時刻" />
+            <Rectangle
+                Grid.Row="8"
+                Grid.Column="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="8"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="00:00:00" />
+            <Rectangle
+                Grid.Row="9"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="9"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="状況" />
+
+            <Rectangle
+                Grid.Row="9"
+                Grid.Column="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="9"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="急発進" />
+
+            <Rectangle
+                Grid.Row="10"
+                Grid.Column="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="10"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="速度変化量 12km/h" />
+            <Rectangle
+                Grid.Row="11"
+                Grid.Column="0"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+
+            <TextBlock
+                Grid.Row="11"
+                Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="場所" />
+
+            <Rectangle
+                Grid.Row="11"
+                Grid.Column="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="11"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="静岡県裾野市御宿" />
+
+            <!--<Grid
+                Grid.Row="7"
+                Grid.RowSpan="5"
+                Grid.Column="3"
+                Grid.ColumnSpan="5">
+                <oxy:PlotView
+                    Controller="{Binding Controller}"
+                    DataContext="{Binding Sample1}"
+                    Model="{Binding Model}" />
+            </Grid>-->
+            <Grid
+                Grid.Row="7"
+                Grid.RowSpan="5"
+                Grid.Column="3"
+                Grid.ColumnSpan="5">
+                <oxy:PlotView  Model="{Binding PModel}" Height="58" Width="200"/>
+
+                <!--<oxy:Plot Title="Plot (XAML Chart)" TitleFontSize="10" LegendTextColor="#FF000049" LegendTitleColor="#FF0F0F2B" LegendTitle="Line">
+                    <oxy:Plot.Axes>
+                        <oxy:LinearAxis Position="Bottom"/>
+                        <oxy:LinearAxis/>
+                    </oxy:Plot.Axes>
+                    <oxy:LineSeries ItemsSource="{Binding DataPoints1}" Title="Line1"/>
+                    <oxy:LineSeries ItemsSource="{Binding DataPoints2}" Title="Line2"/>
+                </oxy:Plot>-->
+                
+            </Grid>
+           <Image
+                Grid.Row="7"
+                Grid.RowSpan="5"
+                Grid.Column="9"
+                Grid.ColumnSpan="3"
+                Width="88"
+                Height="58"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="C:\Users\p.r-itoh\source\repos\VainZero.WpfReportPrinting\VainZero.WpfReportPrinting.Demo\mapsample.png"
+                Stretch="Fill" /> 
+
+             <Rectangle
+                Grid.Row="13"
+                Grid.Column="0"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="13"
+                Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="発生日" />
+
+            <Rectangle
+                Grid.Row="13"
+                Grid.Column="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="13"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="2099/01/01" />
+            <Rectangle
+                Grid.Row="14"
+                Grid.Column="0"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="14"
+                Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="時刻" />
+            <Rectangle
+                Grid.Row="14"
+                Grid.Column="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="14"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="00:00:00" />
+            <Rectangle
+                Grid.Row="15"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="15"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="状況" />
+
+            <Rectangle
+                Grid.Row="15"
+                Grid.Column="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="15"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="急発進" />
+
+            <Rectangle
+                Grid.Row="16"
+                Grid.Column="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="16"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="速度変化量 12km/h" />
+            <Rectangle
+                Grid.Row="17"
+                Grid.Column="0"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+
+            <TextBlock
+                Grid.Row="17"
+                Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="場所" />
+
+            <Rectangle
+                Grid.Row="17"
+                Grid.Column="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+
+            <TextBlock
+                Grid.Row="17"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="5"
+                Text="静岡県裾野市御宿" />
+
+            <Image
+                Grid.Row="13"
+                Grid.RowSpan="5"
+                Grid.Column="3"
+                Grid.ColumnSpan="5"
+                Width="150"
+                Height="48"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="C:\Users\p.r-itoh\source\repos\VainZero.WpfReportPrinting\VainZero.WpfReportPrinting.Demo\output_1.png"
+                Stretch="Fill" />
+            <Image
+                Grid.Row="13"
+                Grid.RowSpan="5"
+                Grid.Column="9"
+                Grid.ColumnSpan="3"
+                Width="88"
+                Height="58"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="C:\Users\p.r-itoh\source\repos\VainZero.WpfReportPrinting\VainZero.WpfReportPrinting.Demo\mapsample.png"
+                Stretch="Fill" /> 
         </Grid>
     </DataTemplate>
 
-    <!-- 注文書 -->
+    <!--  安全運転確認書  -->
 
     <DataTemplate DataType="{x:Type local:OrderFormPage}">
         <DataTemplate.Resources>
@@ -53,82 +815,84 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
-            <Style
-                TargetType="{x:Type headeredGrid:HeaderedGridRowCell}"
-                BasedOn="{StaticResource RowCellStyle}"
-                />
+            <Style BasedOn="{StaticResource RowCellStyle}" TargetType="{x:Type headeredGrid:HeaderedGridRowCell}" />
             <Style
                 x:Key="NumberCellStyle"
-                TargetType="{x:Type headeredGrid:HeaderedGridRowCell}"
                 BasedOn="{StaticResource RowCellStyle}"
-                >
+                TargetType="{x:Type headeredGrid:HeaderedGridRowCell}">
                 <Setter Property="HorizontalContentAlignment" Value="Right" />
             </Style>
         </DataTemplate.Resources>
-        
+
         <Grid Margin="30">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <!-- ヘッダー -->
+            <!--  ヘッダー  -->
             <StackPanel>
                 <TextBlock
-                    HorizontalAlignment="Center"
-                    FontSize="30"
-                    Text="注 文 書"
-                    />
-                <TextBlock
-                    HorizontalAlignment="Right"
-                    Text="{Binding Header.OrderDate, StringFormat=yyyy年MM月dd日}"
-                    />
-                <TextBlock>
-                    <Run Text="{Binding Header.TargetName, Mode=OneTime}"/>御中
-                </TextBlock>
-                <TextBlock TextDecorations="Underline">
-                    税抜 合計金額 ￥<Run Text="{Binding Header.TotalPrice, Mode=OneTime}" />―
-                </TextBlock>
+                    HorizontalAlignment="Left"
+                    FontSize="10"
+                    Text="安全運転確認書" />
+                <TextBlock HorizontalAlignment="Right" Text="{Binding Header.OrderDate, StringFormat=yyyy年MM月dd日}" />
                 <TextBlock HorizontalAlignment="Right">
-                    ページ <Run Text="{Binding PageIndex, Mode=OneTime}"/>/<Run Text="{Binding PageCount, Mode=OneTime}" />
+                    ページ<Run Text="{Binding PageIndex, Mode=OneTime}" />
+                    /<Run Text="{Binding PageCount, Mode=OneTime}" />
                 </TextBlock>
-            </StackPanel>
+           
+            <Image
 
-            <!-- 明細 -->
+                Width="88"
+                Height="58"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="C:\Users\p.r-itoh\source\repos\VainZero.WpfReportPrinting\VainZero.WpfReportPrinting.Demo\mapsample.png"
+                Stretch="Fill" />
+
+                <oxy:Plot Title="Binding ItemsSource" Grid.Row="1"
+              Subtitle="{Binding Subtitle}">
+                    <oxy:Plot.Series>
+                        <oxy:LineSeries Title="Value" DataFieldX="Time"
+                        DataFieldY="Value"
+                        ItemsSource="{Binding Measurements}"
+                        StrokeThickness="2" Color="Blue" />
+                        <oxy:LineSeries Title="Maximum" DataFieldX="Time"
+                        DataFieldY="Maximum"
+                        ItemsSource="{Binding Measurements}"
+                        LineStyle="Dash" StrokeThickness="2"
+                        Color="Red" />
+                        <oxy:LineSeries Title="Minimum" DataFieldX="Time"
+                        DataFieldY="Minimum"
+                        ItemsSource="{Binding Measurements}"
+                        LineStyle="Dot" StrokeThickness="2"
+                        Color="Green" />
+                    </oxy:Plot.Series>
+                </oxy:Plot>
+
+                <oxy:PlotView
+                    Controller="{Binding Controller}"
+                    DataContext="{Binding Sample1}"
+                    Model="{Binding Model}" />
+              
+            </StackPanel>
+            <!--  明細  -->
             <headeredGrid:HeaderedGrid
                 Grid.Row="1"
                 Margin="0,20,0,20"
-                ItemsSource="{Binding Items}"
-                >
+                ItemsSource="{Binding Items}">
                 <headeredGrid:HeaderedGrid.Columns>
                     <headeredGrid:HeaderedGridColumn
-                        Header="商品名"
-                        Width="2*"
+                        Width="50"
                         CellBinding="{Binding Name}"
-                        />
+                        Header="発生日" />
                     <headeredGrid:HeaderedGridColumn
-                        Header="数量"
-                        Width="80"
-                        CellBinding="{Binding Count}"
-                        CellStyle="{StaticResource NumberCellStyle}"
-                        />
-                    <headeredGrid:HeaderedGridColumn
-                        Header="単価"
-                        Width="80"
-                        CellBinding="{Binding UnitPrice}"
-                        CellStyle="{StaticResource NumberCellStyle}"
-                        />
-                    <headeredGrid:HeaderedGridColumn
-                        Header="金額"
-                        Width="120"
+                        Width="50"
                         CellBinding="{Binding TotalPrice}"
                         CellStyle="{StaticResource NumberCellStyle}"
-                        />
-                    <headeredGrid:HeaderedGridColumn
-                        Header="備考"
-                        Width="3*"
-                        CellBinding="{Binding Note}"
-                        />
+                        Header="{Binding Header.OrderDate, StringFormat=yyy/MM/dd hh:mm}" />
+
                 </headeredGrid:HeaderedGrid.Columns>
             </headeredGrid:HeaderedGrid>
         </Grid>

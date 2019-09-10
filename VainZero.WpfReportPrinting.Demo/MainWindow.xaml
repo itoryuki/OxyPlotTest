@@ -3,22 +3,18 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:VainZero.WpfReportPrinting.Demo"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:previewer="clr-namespace:VainZero.WpfReportPrinting.Demo.Previewing"
     xmlns:reports="clr-namespace:VainZero.WpfReportPrinting.Demo.Reports"
-    mc:Ignorable="d"
     Title="MainWindow"
     Width="800"
     Height="800"
-    >
+    mc:Ignorable="d">
     <Window.Resources>
         <DataTemplate DataType="{x:Type local:SampleReportPreviewer}">
             <DockPanel>
-                <ContentPresenter
-                    DockPanel.Dock="Left"
-                    Content="{Binding ReportSelector}"
-                    />
+                <ContentPresenter Content="{Binding ReportSelector}" DockPanel.Dock="Left" />
                 <ContentPresenter Content="{Binding Previewer}" />
             </DockPanel>
         </DataTemplate>

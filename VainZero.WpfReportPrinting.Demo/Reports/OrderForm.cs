@@ -1,16 +1,10 @@
-﻿using System;
+﻿using OxyPlot;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Media;
-using VainZero.Windows.Controls;
 using VainZero.Windows.Documents;
-using VainZero.Windows.Media;
 
 namespace VainZero.WpfReportPrinting.Demo.Reports
 {
@@ -57,7 +51,11 @@ namespace VainZero.WpfReportPrinting.Demo.Reports
             TargetName = targetName;
             OrderDate = orderDate;
             TotalPrice = totalPrice;
+            
         }
+       
+
+        
     }
 
     public sealed class OrderFormPage
@@ -83,7 +81,7 @@ namespace VainZero.WpfReportPrinting.Demo.Reports
     public sealed class OrderForm
         : IReport
     {
-        public string ReportName => "注文書";
+        public string ReportName => "確認書";
 
         public OrderFormHeader Header { get; }
 
@@ -99,7 +97,7 @@ namespace VainZero.WpfReportPrinting.Demo.Reports
                 .Paginate(size)
                 .Select(items => new OrderFormPage(Header, items))
                 .ToArray();
-            
+
             // 各ページのページ番号・ページ数を設定する。
             var pageIndex = 1;
             foreach (var page in pages)
