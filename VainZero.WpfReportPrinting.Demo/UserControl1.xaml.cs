@@ -8,7 +8,7 @@ namespace VainZero.WpfReportPrinting.Demo
     /// </summary>
     public partial class UserControl1 : UserControl
     {
-        public HelloWorldPageViewModel Sample1 { get; } = new HelloWorldPageViewModel();
+        public ShidouReportPageViewModel Sample1 { get; } = new ShidouReportPageViewModel();
         public UserControl1()
         {
             InitializeComponent();

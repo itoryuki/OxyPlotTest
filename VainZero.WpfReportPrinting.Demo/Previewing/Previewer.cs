@@ -5,10 +5,11 @@ using System.Reactive.Linq;
 using System.Windows.Input;
 using VainZero.WpfReportPrinting.Demo.Printing;
 using VainZero.WpfReportPrinting.Demo.Reports;
+using Xware.ComponentModel;
 
 namespace VainZero.WpfReportPrinting.Demo.Previewing
 {
-    public sealed class Previewer
+    public sealed class Previewer : BindableBase
     {
         public IReadOnlyReactiveProperty<IReport> Report { get; }
 
@@ -45,5 +46,34 @@ namespace VainZero.WpfReportPrinting.Demo.Previewing
             // 印刷ボタンが押されたら印刷する。
             printCommand.Subscribe(_ => Print());
         }
+
+        #region 表示プロパティ制御
+        /// <summary>
+        /// プレビューエリア
+        /// </summary>
+        private bool _previewVisibility;
+        /// <summary>
+        ///
+        /// </summary>
+        public bool PreviewVisibility
+        {
+            get
+            {
+                return _previewVisibility;
+            }
+
+            set
+            {
+                if (_previewVisibility == value)
+                {
+                    return;
+                }
+
+                _previewVisibility = value;
+                RaisePropertyChanged(nameof(PreviewVisibility));
+            }
+        }
+        #endregion
+
     }
 }

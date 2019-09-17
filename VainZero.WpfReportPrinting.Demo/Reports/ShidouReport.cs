@@ -10,7 +10,7 @@ using System.Windows;
 
 namespace VainZero.WpfReportPrinting.Demo.Reports
 {
-    public sealed class HelloWorldPageViewModel : BindableBase
+    public sealed class ShidouReportPageViewModel : BindableBase
     {
         private int dataNumber = 200;
         private double frequency = 50.0;
@@ -37,7 +37,7 @@ namespace VainZero.WpfReportPrinting.Demo.Reports
             set { SetProperty(ref _title, value); }
         }
 
-        public HelloWorldPageViewModel()
+        public ShidouReportPageViewModel()
         {
             MakeLineData();
             MakeChart();
@@ -236,7 +236,7 @@ namespace VainZero.WpfReportPrinting.Demo.Reports
 
     }
 
-    public sealed class HelloWorldReport
+    public sealed class ShidouReport
         : IReport
     {
         public string ReportName => "指導書";
@@ -244,7 +244,7 @@ namespace VainZero.WpfReportPrinting.Demo.Reports
         IReadOnlyList<object> Pages { get; } =
             new object[]
             {
-                new HelloWorldPageViewModel(),
+                new ShidouReportPageViewModel(),
             };
 
         public IReadOnlyList<object> Paginate(Size size)

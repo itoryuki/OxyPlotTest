@@ -19,7 +19,7 @@
 
     <!--  指導書  -->
 
-    <DataTemplate DataType="{x:Type local:HelloWorldPageViewModel}">
+    <DataTemplate DataType="{x:Type local:ShidouReportPageViewModel}">
         <Grid Margin="30">
 
             <Grid.ColumnDefinitions>
@@ -805,8 +805,9 @@
     </DataTemplate>
 
     <!--  安全運転確認書  -->
+    <DataTemplate DataType="{x:Type local:KakuninReportPageViewModel}">
 
-    <DataTemplate DataType="{x:Type local:OrderFormPage}">
+        <!--<DataTemplate DataType="{x:Type local:KakuninReportPageViewModel}">
         <DataTemplate.Resources>
             <Style TargetType="{x:Type headeredGrid:HeaderedGridHeaderCell}">
                 <Setter Property="Padding" Value="10,0,10,0" />
@@ -836,72 +837,379 @@
                 TargetType="{x:Type headeredGrid:HeaderedGridRowCell}">
                 <Setter Property="HorizontalContentAlignment" Value="Right" />
             </Style>
-        </DataTemplate.Resources>
+        </DataTemplate.Resources>-->
 
-        <Grid Margin="30">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="60" />
+            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition />
+
             </Grid.RowDefinitions>
+            <Rectangle
+                x:Name="Rectangle0"
+                Grid.Row="1"
+                Grid.RowSpan="20"
+                Grid.Column="1"
+                Grid.ColumnSpan="25"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="2" />
 
-            <!--  ヘッダー  -->
-            <StackPanel>
-                <TextBlock
-                    HorizontalAlignment="Left"
-                    FontSize="10"
-                    Text="安全運転確認書" />
-                <TextBlock HorizontalAlignment="Right" Text="{Binding Header.OrderDate, StringFormat=yyyy年MM月dd日}" />
-                <TextBlock HorizontalAlignment="Right">
-                    ページ<Run Text="{Binding PageIndex, Mode=OneTime}" />
-                    /<Run Text="{Binding PageCount, Mode=OneTime}" />
-                </TextBlock>
+            <Rectangle
+                Grid.Row="1"
+                Grid.RowSpan="3"
+                Grid.Column="1"
+                Grid.ColumnSpan="9"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                x:Name="Top"
+                Grid.Row="1"
+                Grid.RowSpan="3"
+                Grid.Column="1"
+                Grid.ColumnSpan="9"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="10"
+                FontWeight="Bold"
+                Text="安全運転確認書" />
+            <Rectangle
+                Grid.Row="1"
+                Grid.RowSpan="2"
+                Grid.Column="10"
+                Grid.ColumnSpan="6"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="1"
+                Grid.RowSpan="2"
+                Grid.Column="10"
+                Grid.ColumnSpan="6"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="6"
+                Text="[確認書番号]3456789012345678901234567890" />
+            <Rectangle
+                Grid.Row="1"
+                Grid.RowSpan="2"
+                Grid.Column="16"
+                Grid.ColumnSpan="5"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="1"
+                Grid.RowSpan="2"
+                Grid.Column="16"
+                Grid.ColumnSpan="5"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="6"
+                Text="出力日付：2019/07/04" />
+            <Rectangle
+                Grid.Row="3"
+                Grid.RowSpan="2"
+                Grid.Column="10"
+                Grid.ColumnSpan="6"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="3"
+                Grid.RowSpan="2"
+                Grid.Column="10"
+                Grid.ColumnSpan="6"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="6"
+                Text="[乗務員名称]" />
+            <Rectangle
+                Grid.Row="3"
+                Grid.RowSpan="2"
+                Grid.Column="16"
+                Grid.ColumnSpan="5"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="3"
+                Grid.RowSpan="2"
+                Grid.Column="16"
+                Grid.ColumnSpan="5"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="6"
+                Text="ページ：1/1" />
+            <Rectangle
+                Grid.Row="4"
+                Grid.RowSpan="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="9"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="4"
+                Grid.RowSpan="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="9"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                FontSize="6"
+                Text="Ver.01.01.0001" />
+            <Rectangle
+                Grid.Row="1"
+                Grid.RowSpan="1"
+                Grid.Column="21"
+                Grid.ColumnSpan="3"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <Rectangle
+                Grid.Row="1"
+                Grid.RowSpan="1"
+                Grid.Column="24"
+                Grid.ColumnSpan="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <Rectangle
+                Grid.Row="1"
+                Grid.RowSpan="1"
+                Grid.Column="25"
+                Grid.ColumnSpan="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <Rectangle
+                Grid.Row="2"
+                Grid.RowSpan="3"
+                Grid.Column="21"
+                Grid.ColumnSpan="3"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <Rectangle
+                Grid.Row="2"
+                Grid.RowSpan="3"
+                Grid.Column="24"
+                Grid.ColumnSpan="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <Rectangle
+                Grid.Row="2"
+                Grid.RowSpan="3"
+                Grid.Column="25"
+                Grid.ColumnSpan="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
 
-                <Image
-                    Width="88"
-                    Height="58"
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Top"
-                    Source="C:\Users\p.r-itoh\source\repos\VainZero.WpfReportPrinting\VainZero.WpfReportPrinting.Demo\mapsample.png"
-                    Stretch="Fill" />
+            <Rectangle
+                Grid.Row="6"
+                Grid.Column="1"
+                Grid.ColumnSpan="1"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="6"
+                Grid.Column="1"
+                Grid.ColumnSpan="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="6"
+                Text="運行日付" />
+            <Rectangle
+                Grid.Row="6"
+                Grid.Column="2"
+                Grid.ColumnSpan="6"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
 
-                <oxy:Plot
-                    Title="Binding ItemsSource"
-                    Grid.Row="1"
-                    Subtitle="{Binding Subtitle}">
-                    <oxy:Plot.Series>
-                        <oxy:LineSeries
-                            Title="Value"
-                            DataFieldX="Time"
-                            DataFieldY="Value"
-                            ItemsSource="{Binding Measurements}"
-                            StrokeThickness="2"
-                            Color="Blue" />
-                        <oxy:LineSeries
-                            Title="Maximum"
-                            DataFieldX="Time"
-                            DataFieldY="Maximum"
-                            ItemsSource="{Binding Measurements}"
-                            LineStyle="Dash"
-                            StrokeThickness="2"
-                            Color="Red" />
-                        <oxy:LineSeries
-                            Title="Minimum"
-                            DataFieldX="Time"
-                            DataFieldY="Minimum"
-                            ItemsSource="{Binding Measurements}"
-                            LineStyle="Dot"
-                            StrokeThickness="2"
-                            Color="Green" />
-                    </oxy:Plot.Series>
-                </oxy:Plot>
+            <TextBlock
+                Grid.Row="6"
+                Grid.Column="2"
+                Grid.ColumnSpan="6"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="6"
+                Text="2019/07/01 10:10:30" />
+            <Rectangle
+                Grid.Row="6"
+                Grid.Column="8"
+                Grid.ColumnSpan="9"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="6"
+                Grid.Column="8"
+                Grid.ColumnSpan="9"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="6"
+                Text="東京都港区港南１－８－１５" />
+            <Rectangle
+                Grid.Row="6"
+                Grid.Column="17"
+                Grid.ColumnSpan="4"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="6"
+                Grid.Column="17"
+                Grid.ColumnSpan="4"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="6"
+                Text="2019/07/01 20:10:30" />
+            <Rectangle
+                Grid.Row="6"
+                Grid.Column="21"
+                Grid.ColumnSpan="5"
+                Opacity="1"
+                Stroke="Black"
+                StrokeThickness="1" />
+            <TextBlock
+                Grid.Row="6"
+                Grid.Column="21"
+                Grid.ColumnSpan="5"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="6"
+                Text="東京都港区港南１－８－１５" />
 
-                <oxy:PlotView
-                    Controller="{Binding Controller}"
-                    DataContext="{Binding Sample1}"
-                    Model="{Binding Model}" />
 
-            </StackPanel>
-            <!--  明細  -->
+
+
+            <Image
+                Grid.Row="50"
+                Grid.RowSpan="6"
+                Grid.Column="20"
+                Grid.ColumnSpan="6"
+                Width="150"
+                Height="48"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="C:\Users\p.r-itoh\source\repos\VainZero.WpfReportPrinting\VainZero.WpfReportPrinting.Demo\\bin\Debug\output_2.png"
+                Stretch="Fill" />
+
+
+
+            <!--  明細
             <headeredGrid:HeaderedGrid
                 Grid.Row="1"
                 Margin="0,20,0,20"
@@ -918,7 +1226,7 @@
                         Header="{Binding Header.OrderDate, StringFormat=yyy/MM/dd hh:mm}" />
 
                 </headeredGrid:HeaderedGrid.Columns>
-            </headeredGrid:HeaderedGrid>
+            </headeredGrid:HeaderedGrid>-->
         </Grid>
     </DataTemplate>
 </ResourceDictionary>
