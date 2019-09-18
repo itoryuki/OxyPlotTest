@@ -70,6 +70,13 @@ namespace VainZero.WpfReportPrinting.Demo.Reports
 
                 OxyPlot.Wpf.PngExporter.Export(Model1, stream, gwidth, gheight, OxyColor.FromArgb(0xff, 0xff, 0xff, 0xff));
             }
+            using (var stream = new FileStream("output_3.png", FileMode.Create))
+            {
+                var gwidth = 400;
+                var gheight = 400;
+
+                OxyPlot.Wpf.PngExporter.Export(Model3, stream, gwidth, gheight, OxyColor.FromArgb(0xff, 0xff, 0xff, 0xff));
+            }
         }
 
         //表示用のラインデータを２本作成
@@ -108,11 +115,11 @@ namespace VainZero.WpfReportPrinting.Demo.Reports
 
 
         //1本目のラインデータ
-       // private List<DataPoint> dataPoints1;
+        // private List<DataPoint> dataPoints1;
         //public List<DataPoint> DataPoints1
         //{
         //    get { return dataPoints1; }
-            //set { SetProperty(ref dataPoints1, value); }
+        //set { SetProperty(ref dataPoints1, value); }
         //}
 
 
@@ -130,14 +137,20 @@ namespace VainZero.WpfReportPrinting.Demo.Reports
                             };
 
             // Create the plot model
-            var tmp = new PlotModel { Title = "発進停止診断", LegendPlacement = LegendPlacement.Outside, LegendPosition = LegendPosition.RightTop, LegendOrientation = LegendOrientation.Vertical };
+            var tmp = new PlotModel
+            {
+                Title = "発進停止診断",
+                LegendPlacement = LegendPlacement.Outside,
+                LegendPosition = LegendPosition.RightTop,
+                LegendOrientation = LegendOrientation.Vertical
+            };
 
             // Add the axes, note that MinimumPadding and AbsoluteMinimum should be set on the value axis.
             tmp.Axes.Add(new CategoryAxis { Position = AxisPosition.Left, ItemsSource = this.Items, LabelField = "Label" });
             tmp.Axes.Add(new LinearAxis { Position = AxisPosition.Bottom, MinimumPadding = 0, AbsoluteMinimum = 0 });
 
             // Add the series, note that the BarSeries are using the same ItemsSource as the CategoryAxis.
-            tmp.Series.Add(new BarSeries { Title = "2009", ItemsSource = Items, ValueField = "Value1" });
+            tmp.Series.Add(new BarSeries { ItemsSource = Items, ValueField = "Value1" });
             //tmp.Series.Add(new BarSeries { Title = "2010", ItemsSource = this.Items, ValueField = "Value2" });
             //tmp.Series.Add(new BarSeries { Title = "2011", ItemsSource = this.Items, ValueField = "Value3" });
 
@@ -146,12 +159,38 @@ namespace VainZero.WpfReportPrinting.Demo.Reports
             Model1.InvalidatePlot(true);
 
             //this.DataContext = this;
+
+            //チャート
+            var model3= new PlotModel
+            {
+                PlotType = PlotType.Polar,
+                PlotMargins = new OxyThickness(0, 0, 0, 0),
+                PlotAreaBorderThickness = new OxyThickness(0)
+            };
+            model3.Axes.Add(
+                new AngleAxis
+                {
+                    Minimum = 0,
+                    Maximum = 15,
+                    MajorStep = 10,
+                    MinorStep = 1,
+                    FormatAsFractions = true,
+                    FractionUnit = Math.PI,
+                    FractionUnitSymbol = "チャート"
+                });
+            model3.Axes.Add(new MagnitudeAxis());
+            model3.Series.Add(new FunctionSeries(t => t, t => t, 0, Math.PI * 6, 0.01));
+
+            Model3 = model3;
+            Model3.InvalidatePlot(true);
         }
 
 
         public Collection<Item> Items { get; set; }
 
         public PlotModel Model1 { get; set; }
+        public PlotModel Model2 { get; set; }
+        public PlotModel Model3 { get; set; }
         //public PlotModel Model { get; } = new PlotModel();
         //public sealed class OrderFormPage
         //: ISingleHeaderedGridPage<OrderItem>

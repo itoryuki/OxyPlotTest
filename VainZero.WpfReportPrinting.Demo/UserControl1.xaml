@@ -51,6 +51,8 @@
             <RowDefinition Height="10" />
             <RowDefinition Height="10" />
             <RowDefinition Height="10" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="50" />
             <RowDefinition Height="10" />
             <RowDefinition Height="10" />
             <RowDefinition Height="10" />
@@ -81,52 +83,23 @@
             <RowDefinition Height="10" />
             <RowDefinition Height="10" />
             <RowDefinition Height="10" />
+            <RowDefinition Height="2" />
             <RowDefinition Height="10" />
+            <RowDefinition Height="50" />
             <RowDefinition Height="10" />
             <RowDefinition Height="10" />
             <RowDefinition Height="10" />
             <RowDefinition Height="10" />
             <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
+
+
             <RowDefinition />
 
         </Grid.RowDefinitions>
         <Rectangle
             x:Name="Rectangle0"
             Grid.Row="1"
-            Grid.RowSpan="20"
+            Grid.RowSpan="44"
             Grid.Column="1"
             Grid.ColumnSpan="25"
             Opacity="1"
@@ -362,6 +335,2429 @@
             VerticalAlignment="Center"
             FontSize="6"
             Text="東京都港区港南１－８－１５" />
+        <Rectangle
+            Grid.Row="7"
+            Grid.Column="1"
+            Opacity="2"
+            Stroke="Black"
+            StrokeThickness="1" />
 
+        <TextBlock
+            Grid.Row="7"
+            Grid.Column="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="課所" />
+        <Rectangle
+            Grid.Row="7"
+            Grid.Column="2"
+            Grid.ColumnSpan="8"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+
+        <TextBlock
+            Grid.Row="7"
+            Grid.Column="2"
+            Grid.ColumnSpan="8"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="[課所名]" />
+
+        <Rectangle
+            Grid.Row="7"
+            Grid.Column="10"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="7"
+            Grid.Column="10"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="最長連続走行時間" />
+        <Rectangle
+            Grid.Row="7"
+            Grid.Column="13"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="7"
+            Grid.Column="13"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="10:10:30" />
+
+        <Rectangle
+            Grid.Row="7"
+            Grid.Column="16"
+            Grid.ColumnSpan="2"
+            Opacity="2"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="7"
+            Grid.Column="16"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="非運転時間" />
+        <Rectangle
+            Grid.Row="7"
+            Grid.Column="18"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="7"
+            Grid.Column="18"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="10:10:30" />
+
+
+        <Rectangle
+            Grid.Row="8"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+
+        <TextBlock
+            Grid.Row="8"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="車両" />
+        <Rectangle
+            Grid.Row="8"
+            Grid.Column="2"
+            Grid.ColumnSpan="10"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+
+        <TextBlock
+            Grid.Row="8"
+            Grid.Column="2"
+            Grid.ColumnSpan="10"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="[車番]あああ９９９　い９９－９９" />
+
+        <Rectangle
+            Grid.Row="8"
+            Grid.Column="12"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+
+        <TextBlock
+            Grid.Row="8"
+            Grid.Column="12"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="[課所管理番号]" />
+
+        <Rectangle
+            Grid.Row="8"
+            Grid.Column="21"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="8"
+            Grid.Column="21"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="運行時間" />
+        <Rectangle
+            Grid.Row="8"
+            Grid.Column="23"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="8"
+            Grid.Column="23"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="10:10:30" />
+
+        <Rectangle
+            Grid.Row="7"
+            Grid.Column="21"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="7"
+            Grid.Column="21"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="運転時間" />
+        <Rectangle
+            Grid.Row="7"
+            Grid.Column="23"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="7"
+            Grid.Column="23"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="10:10:30" />
+
+        <Rectangle
+            Grid.Row="9"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+
+        <TextBlock
+            Grid.Row="9"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="累積走行距離" />
+        <Rectangle
+            Grid.Row="9"
+            Grid.Column="3"
+            Grid.ColumnSpan="10"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+
+        <TextBlock
+            Grid.Row="9"
+            Grid.Column="3"
+            Grid.ColumnSpan="10"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="9,999,999km～9,999,999km" />
+        <Rectangle
+            Grid.Row="9"
+            Grid.Column="13"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="9"
+            Grid.Column="13"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="走行距離" />
+        <Rectangle
+            Grid.Row="9"
+            Grid.Column="15"
+            Grid.ColumnSpan="7"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="9"
+            Grid.Column="15"
+            Grid.ColumnSpan="7"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="9,999,999km" />
+
+        <Image
+            Grid.Row="11"
+            Grid.RowSpan="10"
+            Grid.Column="1"
+            Grid.ColumnSpan="24"
+            Width="300"
+            Height="100"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Source="C:\Users\p.r-itoh\source\repos\VainZero.WpfReportPrinting\VainZero.WpfReportPrinting.Demo\bin\Debug\output_1.png"
+            Stretch="Fill" />
+
+        <Image
+            Grid.Row="12"
+            Grid.RowSpan="10"
+            Grid.Column="1"
+            Grid.ColumnSpan="24"
+            Width="300"
+            Height="100"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Source="C:\Users\p.r-itoh\source\repos\VainZero.WpfReportPrinting\VainZero.WpfReportPrinting.Demo\bin\Debug\output_1.png"
+            Stretch="Fill" />
+
+        <Rectangle
+            Grid.Row="20"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="20"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="項目" />
+        <Rectangle
+            Grid.Row="20"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="20"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="実測値" />
+        <Rectangle
+            Grid.Row="20"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="20"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="点数" />
+        <Rectangle
+            Grid.Row="20"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="20"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="評価" />
+        <Rectangle
+            Grid.Row="20"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="20"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="コメント" />
+
+        <Rectangle
+            Grid.Row="21"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="21"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="最高速度（一般）" />
+        <Rectangle
+            Grid.Row="21"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="21"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="65km/h" />
+        <Rectangle
+            Grid.Row="21"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="21"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="15" />
+        <Rectangle
+            Grid.Row="21"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="21"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="B" />
+        <Rectangle
+            Grid.Row="21"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="21"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="今後も、会社目標速度を守りましょう" />
+        <Rectangle
+            Grid.Row="22"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="22"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="最高速度（高速）" />
+        <Rectangle
+            Grid.Row="22"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="22"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="-" />
+        <Rectangle
+            Grid.Row="22"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="22"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="-" />
+        <Rectangle
+            Grid.Row="22"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="22"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="-" />
+        <Rectangle
+            Grid.Row="22"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="22"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="" />
+        <Rectangle
+            Grid.Row="23"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="23"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="最高速度（専用道）" />
+        <Rectangle
+            Grid.Row="23"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="23"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="95km/h" />
+        <Rectangle
+            Grid.Row="23"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="23"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="0" />
+        <Rectangle
+            Grid.Row="23"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="23"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="B" />
+        <Rectangle
+            Grid.Row="23"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="23"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="あなたの運転は非常に危険です" />
+        <Rectangle
+            Grid.Row="24"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="24"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="速度オーバー（回数）" />
+        <Rectangle
+            Grid.Row="24"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="24"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="6" />
+        <Rectangle
+            Grid.Row="24"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="24"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="15" />
+        <Rectangle
+            Grid.Row="24"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="24"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="B" />
+        <Rectangle
+            Grid.Row="24"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="24"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="速度オーバーを低減するよう努力しましょう" />
+        <Rectangle
+            Grid.Row="25"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="25"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="速度オーバー（時間）" />
+        <Rectangle
+            Grid.Row="25"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="25"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="10" />
+        <Rectangle
+            Grid.Row="25"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="25"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="10" />
+        <Rectangle
+            Grid.Row="25"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="25"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="B" />
+        <Rectangle
+            Grid.Row="25"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="25"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="" />
+        <Rectangle
+            Grid.Row="26"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="26"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="急発進（回数）" />
+        <Rectangle
+            Grid.Row="26"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="26"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="35.4回/h" />
+        <Rectangle
+            Grid.Row="26"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="26"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="0" />
+        <Rectangle
+            Grid.Row="26"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="26"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="E" />
+        <Rectangle
+            Grid.Row="26"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="26"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="あなたの運転は非常に危険です" />
+        <Rectangle
+            Grid.Row="27"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="27"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="急加速（回数）" />
+        <Rectangle
+            Grid.Row="27"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="27"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="0.0回/h" />
+        <Rectangle
+            Grid.Row="27"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="27"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="100" />
+        <Rectangle
+            Grid.Row="27"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="27"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="A" />
+        <Rectangle
+            Grid.Row="27"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="27"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="今後も余裕をもって運転してください" />
+        <Rectangle
+            Grid.Row="28"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="28"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="急減速（回数）" />
+        <Rectangle
+            Grid.Row="28"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="28"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="0.0回/h" />
+        <Rectangle
+            Grid.Row="28"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="28"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="100" />
+        <Rectangle
+            Grid.Row="28"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="28"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="A" />
+        <Rectangle
+            Grid.Row="28"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="28"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="今後も余裕をもって運転してください" />
+        <Rectangle
+            Grid.Row="29"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="29"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="連続走行時間" />
+        <Rectangle
+            Grid.Row="29"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="29"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="0.23" />
+        <Rectangle
+            Grid.Row="29"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="29"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="100" />
+        <Rectangle
+            Grid.Row="29"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="29"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="A" />
+        <Rectangle
+            Grid.Row="29"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="29"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="今後も余裕をもって運転してください" />
+        <Rectangle
+            Grid.Row="30"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="30"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="危険兆候" />
+        <Rectangle
+            Grid.Row="30"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="30"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="0.0回/h" />
+        <Rectangle
+            Grid.Row="30"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="30"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="100" />
+        <Rectangle
+            Grid.Row="30"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="30"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="A" />
+        <Rectangle
+            Grid.Row="30"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="30"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="今後も余裕をもって運転してください" />
+        <Rectangle
+            Grid.Row="31"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="31"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="トリガ" />
+        <Rectangle
+            Grid.Row="31"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="31"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="0.0回/h" />
+        <Rectangle
+            Grid.Row="31"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="31"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="100" />
+        <Rectangle
+            Grid.Row="31"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="31"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="A" />
+        <Rectangle
+            Grid.Row="31"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="31"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="今後も余裕をもって運転してください" />
+        <Rectangle
+            Grid.Row="32"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="32"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="急ブレーキ" />
+        <Rectangle
+            Grid.Row="32"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="32"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="0.0回/h" />
+        <Rectangle
+            Grid.Row="32"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="32"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="100" />
+        <Rectangle
+            Grid.Row="32"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="32"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="A" />
+        <Rectangle
+            Grid.Row="32"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="32"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="今後も余裕をもって運転してください" />
+        <Rectangle
+            Grid.Row="33"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="33"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="急旋回" />
+        <Rectangle
+            Grid.Row="33"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="33"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="0.0回/h" />
+        <Rectangle
+            Grid.Row="33"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="33"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="100" />
+        <Rectangle
+            Grid.Row="33"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="33"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="A" />
+        <Rectangle
+            Grid.Row="33"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="33"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="今後も余裕をもって運転してください" />
+        <Rectangle
+            Grid.Row="34"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="34"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="ふらつき" />
+        <Rectangle
+            Grid.Row="34"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="34"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="0.0回/h" />
+        <Rectangle
+            Grid.Row="34"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="34"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="100" />
+        <Rectangle
+            Grid.Row="34"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="34"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="A" />
+        <Rectangle
+            Grid.Row="34"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="34"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="今後も余裕をもって運転してください" />
+        <Rectangle
+            Grid.Row="35"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="35"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="車間距離警報（回数）" />
+        <Rectangle
+            Grid.Row="35"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="35"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="0.0回/h" />
+        <Rectangle
+            Grid.Row="35"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="35"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="100" />
+        <Rectangle
+            Grid.Row="35"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="35"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="A" />
+        <Rectangle
+            Grid.Row="35"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="35"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="今後も余裕をもって運転してください" />
+        <Rectangle
+            Grid.Row="36"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="36"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="路面速度警報（回数）" />
+        <Rectangle
+            Grid.Row="36"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="36"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="0.0回/h" />
+        <Rectangle
+            Grid.Row="36"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="36"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="100" />
+        <Rectangle
+            Grid.Row="36"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="36"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="A" />
+        <Rectangle
+            Grid.Row="36"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="36"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="今後も余裕をもって運転してください" />
+        <Rectangle
+            Grid.Row="37"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="37"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="横断歩道警報（回数）" />
+        <Rectangle
+            Grid.Row="37"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="37"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="0.0回/h" />
+        <Rectangle
+            Grid.Row="37"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="37"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="100" />
+        <Rectangle
+            Grid.Row="37"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="37"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="A" />
+        <Rectangle
+            Grid.Row="37"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="37"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="今後も余裕をもって運転してください" />
+        <Rectangle
+            Grid.Row="38"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="38"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="右左折警報（回数）" />
+        <Rectangle
+            Grid.Row="38"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="38"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="0.0回/h" />
+        <Rectangle
+            Grid.Row="38"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="38"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="100" />
+        <Rectangle
+            Grid.Row="38"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="38"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="A" />
+        <Rectangle
+            Grid.Row="38"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="38"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="今後も余裕をもって運転してください" />
+        <Rectangle
+            Grid.Row="39"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="39"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="止まれ検知警報（回数）" />
+        <Rectangle
+            Grid.Row="39"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="39"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="0.0回/h" />
+        <Rectangle
+            Grid.Row="39"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="39"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="100" />
+        <Rectangle
+            Grid.Row="39"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="39"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="B" />
+        <Rectangle
+            Grid.Row="39"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="39"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="今後も余裕をもって運転してください" />
+        <Rectangle
+            Grid.Row="40"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="40"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="ゆっくり発進" />
+        <Rectangle
+            Grid.Row="40"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="40"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="14%" />
+        <Rectangle
+            Grid.Row="40"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="40"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="10" />
+        <Rectangle
+            Grid.Row="40"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="40"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="D" />
+        <Rectangle
+            Grid.Row="40"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="40"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="*************" />
+        <Rectangle
+            Grid.Row="41"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="41"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="安全停止" />
+        <Rectangle
+            Grid.Row="41"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="41"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="85%" />
+        <Rectangle
+            Grid.Row="41"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="41"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="20" />
+        <Rectangle
+            Grid.Row="41"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="41"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="A" />
+        <Rectangle
+            Grid.Row="41"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="41"
+            Grid.Column="11"
+            Grid.ColumnSpan="9"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="**********" />
+        <Rectangle
+            Grid.Row="42"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="42"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="" />
+        <Rectangle
+            Grid.Row="42"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="42"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="" />
+        <Rectangle
+            Grid.Row="42"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="42"
+            Grid.Column="7"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="" />
+        <Rectangle
+            Grid.Row="42"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="42"
+            Grid.Column="10"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="" />
+        <Rectangle
+            Grid.Row="40"
+            Grid.RowSpan="2"
+            Grid.Column="20"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="40"
+            Grid.RowSpan="2"
+            Grid.Column="20"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="安全運転100 [A]" />
+        <Rectangle
+            Grid.Row="42"
+            Grid.RowSpan="3"
+            Grid.Column="20"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="42"
+            Grid.RowSpan="3"
+            Grid.Column="20"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="経済運転 92 [A]" />
+        <Rectangle
+            Grid.Row="40"
+            Grid.RowSpan="5"
+            Grid.Column="24"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="40"
+            Grid.RowSpan="4"
+            Grid.Column="24"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="8"
+            Text="総合評価 95 [A]" />
+        <Rectangle
+            Grid.Row="44"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="44"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="バック回数" />
+        <Rectangle
+            Grid.Row="44"
+            Grid.Column="2"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="44"
+            Grid.Column="2"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="15回" />
+        <Rectangle
+            Grid.Row="44"
+            Grid.Column="5"
+            Grid.ColumnSpan="4"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="44"
+            Grid.Column="5"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="バック距離" />
+        <Rectangle
+            Grid.Row="44"
+            Grid.Column="9"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="44"
+            Grid.Column="9"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="280m" />
+        <Rectangle
+            Grid.Row="44"
+            Grid.Column="11"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="44"
+            Grid.Column="11"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="バック時間" />
+        <Rectangle
+            Grid.Row="44"
+            Grid.Column="14"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="44"
+            Grid.Column="14"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="250秒" />
+        <Rectangle
+            Grid.Row="44"
+            Grid.Column="15"
+            Grid.ColumnSpan="2"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="44"
+            Grid.Column="15"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="燃費" />
+        <Rectangle
+            Grid.Row="44"
+            Grid.Column="17"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="44"
+            Grid.Column="17"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="17.2km/L" />
+        <Image
+            Grid.Row="20"
+            Grid.RowSpan="6"
+            Grid.Column="20"
+            Grid.ColumnSpan="6"
+            Width="150"
+            Height="50"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Source="C:\Users\p.r-itoh\source\repos\VainZero.WpfReportPrinting\VainZero.WpfReportPrinting.Demo\\bin\Debug\output_2.png"
+            Stretch="Fill" />
+
+        <Image
+            Grid.Row="26"
+            Grid.RowSpan="14"
+            Grid.Column="20"
+            Grid.ColumnSpan="6"
+            Width="130"
+            Height="130"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Source="C:\Users\p.r-itoh\source\repos\VainZero.WpfReportPrinting\VainZero.WpfReportPrinting.Demo\\bin\Debug\output_3.png"
+            Stretch="Fill" />
+
+        <Rectangle
+            Grid.Row="46"
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="46"
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="違反項目" />
+        <Rectangle
+            Grid.Row="46"
+            Grid.Column="5"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="46"
+            Grid.Column="5"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="実測値" />
+        <Rectangle
+            Grid.Row="46"
+            Grid.Column="6"
+            Grid.ColumnSpan="12"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="46"
+            Grid.Column="6"
+            Grid.ColumnSpan="13"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="住所" />
+        <Rectangle
+            Grid.Row="47"
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="47"
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="速度オーバー　一般道" />
+        <Rectangle
+            Grid.Row="47"
+            Grid.Column="5"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="47"
+            Grid.Column="5"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="69km/h" />
+        <Rectangle
+            Grid.Row="47"
+            Grid.Column="6"
+            Grid.ColumnSpan="12"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="47"
+            Grid.Column="6"
+            Grid.ColumnSpan="13"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="静岡市葵区御幸町" />
+        <Rectangle
+            Grid.Row="48"
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="48"
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="速度オーバー　一般道" />
+        <Rectangle
+            Grid.Row="48"
+            Grid.Column="5"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="48"
+            Grid.Column="5"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="65km/h" />
+        <Rectangle
+            Grid.Row="48"
+            Grid.Column="6"
+            Grid.ColumnSpan="12"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="48"
+            Grid.Column="6"
+            Grid.ColumnSpan="13"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="静岡市駿河区泉町" />
+        <Rectangle
+            Grid.Row="49"
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="49"
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="速度オーバー　一般道" />
+        <Rectangle
+            Grid.Row="49"
+            Grid.Column="5"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="49"
+            Grid.Column="5"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="66km/h" />
+        <Rectangle
+            Grid.Row="49"
+            Grid.Column="6"
+            Grid.ColumnSpan="12"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="49"
+            Grid.Column="6"
+            Grid.ColumnSpan="13"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほ" />
+        <Rectangle
+            Grid.Row="50"
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="50"
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="" />
+        <Rectangle
+            Grid.Row="50"
+            Grid.Column="5"
+            Grid.ColumnSpan="1"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="50"
+            Grid.Column="5"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="" />
+        <Rectangle
+            Grid.Row="50"
+            Grid.Column="6"
+            Grid.ColumnSpan="12"
+            Opacity="1"
+            Stroke="Black"
+            StrokeThickness="1" />
+        <TextBlock
+            Grid.Row="50"
+            Grid.Column="6"
+            Grid.ColumnSpan="13"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="6"
+            Text="" />
     </Grid>
 </UserControl>
